@@ -1,0 +1,90 @@
+body, html {
+    font-family: 'Barlow', sans-serif;
+    scroll-behavior: smooth;
+    margin: 0;
+    color: antiquewhite;
+  }  
+#pagina1{
+    background-image: url(IMG_0003.jpg);
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+  }
+
+#cabecalho {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    display: flex;
+    height: 150px;
+    align-content: center;
+    align-items: center;
+    justify-content:space-between;
+    overflow: hidden;
+    position:sticky;
+    top: 0;   
+}
+#bt{
+    margin-right: 100px;
+    height: 50px; 
+}
+button{
+    background: transparent;
+    border: transparent;
+}
+button a{
+    color: aliceblue;
+}
+
+#cabecalho img{
+    width: 200px;
+    height: 200px;
+    margin-left: 100px;    
+    padding: auto;
+}
+#clock{
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 300px;
+    align-items: center;
+    justify-content: center;
+}
+
+#texto{
+    padding-top: 80px;
+    color: black;
+    height: 500px;
+    text-align: center;
+    justify-content: center;
+    background-color:white;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.52);
+}
+
+#pagina {
+    margin-top: 500px;
+    height: 600px;
+    background-image: url(IMG_0021.jpg);
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+  }
+  #texto h1{
+      font-size: 70px;
+      padding-top: 50px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.698);
+      text-align: center;
+  }
+  #texto h5, p{
+      text-align: center;
+  }
+.container{
+    justify-content: left;
+}
+.flip-clock-divider.seconds .flip-clock-label{
+   color:red;
+}
