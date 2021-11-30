@@ -37,10 +37,12 @@ $(document).ready(function() {
         clockFace: 'DailyCounter',
         countdown: true
     });
-    $("#enviar").on("click",function(event){
+
+    $("#bt").on("click",function(event){
         event.preventDefault();
-        console.log($("#email").val());
+        console.log().val();
     });
 });
+
 
 
