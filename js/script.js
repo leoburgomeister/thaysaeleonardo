@@ -37,12 +37,22 @@ $(document).ready(function() {
         clockFace: 'DailyCounter',
         countdown: true
     });
-
-    $("#bt").on("click",function(event){
-        event.preventDefault();
-        console.log().val();
-    });
 });
 
+    // $("#bt").on("click",function(event){
+    //     event.preventDefault();
+    //     console.log(SubmitEvent).val();
+    // });
+    $('form').on('submit', function(event) {
+            
+        // Prevent the page from reloading
+        // event.preventDefault();
+        
+        // Set the text-output span to the value of the first input
+        var $input = $(this).find('input');
+        var input = $input.val();
+        console.log(input);
+        // $('#text-output').text("You typed: " + input);
+    });
 
 
