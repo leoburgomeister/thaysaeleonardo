@@ -10,6 +10,16 @@ var min     = data.getMinutes();        // 0-59
 var seg     = data.getSeconds();        // 0-59
 			
 $(document).ready(function() {
+    FlipClock.Lang.Portuguese = {
+    
+        'years'   : 'Anos',
+        'months'  : 'Meses',
+        'days'    : 'Dias',
+        'hours'   : 'Horas',
+        'minutes' : 'Minutos',
+        'seconds' : 'Segundos'
+
+    };
     // Set dates.
     var futureDate  = new Date(22,12,10,16,30,00);
     var currentDate = new Date(ano2,mes,dia,hora,min,seg);
@@ -46,12 +56,15 @@ $(document).ready(function() {
     $('form').on('submit', function(event) {
             
         // Prevent the page from reloading
-        // event.preventDefault();
+        event.preventDefault();
+        var nome = $("#nome").val();
+        var last = $("#last").val();
+        var email = $("#email").val();
         
         // Set the text-output span to the value of the first input
-        var $input = $(this).find('input');
-        var input = $input.val();
-        console.log(input);
+        // var input = $().find('input');
+        // var input = $input.val();
+        console.log(nome +" "+ last +" "+ email);
         // $('#text-output').text("You typed: " + input);
     });
 

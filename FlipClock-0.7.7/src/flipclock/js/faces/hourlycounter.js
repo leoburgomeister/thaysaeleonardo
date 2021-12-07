@@ -43,11 +43,11 @@
 				});
 			}
 			
-			$(this.createDivider('Seconds')).insertBefore(this.lists[this.lists.length - 2].$el);
-			$(this.createDivider('Minutes')).insertBefore(this.lists[this.lists.length - 4].$el);
+			$(this.createDivider('Segundos')).insertBefore(this.lists[this.lists.length - 2].$el);
+			$(this.createDivider('Minutos')).insertBefore(this.lists[this.lists.length - 4].$el);
 			
 			if(!excludeHours) {
-				$(this.createDivider('Hours', true)).insertBefore(this.lists[0].$el);
+				$(this.createDivider('Horas', true)).insertBefore(this.lists[0].$el);
 			}
 			
 			this.base();
